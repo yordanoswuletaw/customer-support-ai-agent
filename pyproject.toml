@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "customer-support-ai-agent"
+version = "0.1.0"
+description = ""
+authors = ["yordanos <yordanoswuletaw@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "app" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.23.2"
+langserve = {extras = ["server"], version = ">=0.0.30"}
+pydantic = ">=2.7.4,<3.0.0"
+tqdm = "^4.67.1"
+numpy = "^2.2.3"
+pandas = "^2.2.3"
+matplotlib = "^3.10.1"
+faiss-cpu = "^1.10.0"
+langchain = "^0.3.20"
+streamlit = "^1.43.0"
+dotenv = "^0.9.9"
+fastapi = "^0.115.11"
+cloud-sql-python-connector = {extras = ["pg8000"], version = "^1.17.0"}
+langchain-google-vertexai = "^2.0.14"
+langchain-community = "^0.3.19"
+pgvector = "^0.3.6"
+logging = "^0.4.9.6"
+
+
+[tool.poetry.group.dev.dependencies]
+langchain-cli = ">=0.0.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
