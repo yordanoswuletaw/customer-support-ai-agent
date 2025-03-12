@@ -1,4 +1,4 @@
-# Customer Support Ai Agent
+# Customer Support AI Agent
 
 ## Installation
 
